@@ -1,0 +1,55 @@
+.app-container{
+	background-color: coral;
+	display: -webkit-flex; /* Safari */
+  	webkit-justify-content: center; /* Safari 6.1+ */
+	display: flex;
+	justify-content: center;
+}
+
+
+#share-and-generate-div
+{
+	padding-left: 4px;
+	margin-top: 2%;
+	max-width: 52px;
+	/*vertical rule*/
+	border-left:1px solid #000;
+}
+
+#generate-btn{
+	background-color: black;
+	color: white;
+}
+
+#generate-btn:hover{
+	background-color: coral;
+	color: black;
+}
+
+#quote-div{
+	font-family: 'Oswald', serif;
+	font-size: 1.5em;
+	color: white;
+	text-shadow: 1px 1px 1px #ffe;
+	text-align: center;
+	margin-right: 5px;
+}
+
+#sentence{
+	margin-left: 2px;
+}
+
+@media only screen and (min-width: 426px)
+{
+	.app-container{
+		margin-top: 5%;
+		padding: 5px;
+	}
+
+	#share-and-generate-div
+	{
+		margin: 1% 20px;
+		max-width: 95px;
+		padding-left: 20px;		
+	}
+}
