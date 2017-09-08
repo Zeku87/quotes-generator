@@ -1,11 +1,18 @@
 body{
 	background-color: black;
 }
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
 .header{
 	display: flex;
 	justify-content: center;
 	padding: 1rem 0;
 }
+
 #header-title{
 	font-family: 'Oswald', serif;
 	display: inline;
@@ -13,21 +20,20 @@ body{
 	margin-left: 0.3rem;
 	color: white;
 }
+
 #header-icon{
 	display: inline;
 	background-color: white;
 }
 
-
-
 .app-container{
-	background-color: coral;
+    box-shadow: -5px 5px 2px #888888;
+	background-color: white;
 	display: -webkit-flex; /* Safari */
   	webkit-justify-content: center; /* Safari 6.1+ */
 	display: flex;
 	justify-content: center;
 }
-
 
 #share-and-generate-div
 {
@@ -38,20 +44,43 @@ body{
 	border-left:1px solid #000;
 }
 
+@keyframes rotate{
+	from {	transform: rotate(0deg);}
+	to { transform: rotate(360deg);}
+}
+
+#twitter-icon:hover{
+	animation-name: rotate;
+	animation-duration: 2s;
+}
+
+#google-plus-icon:hover{
+	animation-name: rotate;
+	animation-duration: 2s;
+}
+
+@keyframes color{
+	from{ background-color: #0066ff; }
+	to{background-color: white;}
+}
+
 #generate-btn{
 	background-color: black;
 	color: white;
+	border: solid 1px black;
 }
 
 #generate-btn:hover{
-	background-color: coral;
+	background-color: white;
+	animation-name:color;
+	animation-duration: 1s;
 	color: black;
 }
 
 #quote-div{
 	font-family: 'Oswald', serif;
 	font-size: 1.5rem;
-	color: white;
+	color: black;
 	text-shadow: 1px 1px 1px #ffe;
 	text-align: center;
 	margin-right: 5px;
@@ -81,6 +110,7 @@ body{
 		padding: 20px;
 		margin: 2px 12px 0;
 }
+
 @media only screen and (min-width: 1140px)
 {
 	
