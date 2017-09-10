@@ -27,16 +27,16 @@ $(document).ready(function(){
 	});
 
 	$('#twitter-icon').hover(function(){
-		$('body').animate({'background-color':'#3399ff'}, 1000);
+		$('body').stop(true, false).animate({'background-color':'#3399ff'}, 1000);
 	},function(){
-		$('body').animate({'background-color':'black'}, 'slow');
+		$('body').stop(true, false).animate({'background-color':'black'}, 'slow');
 
 	});
 
 	$('#google-plus-icon').hover(function(){
-		$('body').animate({'background-color':'#ff3333'}, 1000);
+		$('body').stop(true, false).animate({'background-color':'#ff3333'}, 1000);
 	},function(){
-		$('body').animate({'background-color':'black'}, 'slow');
+		$('body').stop(true, false).animate({'background-color':'black'}, 'slow');
 
 	});
 
